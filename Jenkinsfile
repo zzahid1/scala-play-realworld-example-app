@@ -31,12 +31,16 @@ spec:
     }
     stages {
         stage('java install'){
-            sh "apt update -y && apt install -y default-jdk"
+            steps('build'){
+                sh "apt update -y && apt install -y default-jdk"
+            }
         }
         stage('SonarQube Analysis') {
-            def scannerHome = tool 'SonarScanner';
-            withSonarQubeEnv(sonarqube) {
-                sh "sbt test"
+            steps('build 2'){
+                def scannerHome = tool 'SonarScanner';
+                withSonarQubeEnv(sonarqube) {
+                    sh "sbt test"
+                }
             }
   }
     }
