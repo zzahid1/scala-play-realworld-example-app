@@ -10,3 +10,4 @@ addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.4.1")
 
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.0")
 addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.2.7")
+addSbtPlugin("com.sonar-scala" % "sbt-sonar" % "2.3.0")
