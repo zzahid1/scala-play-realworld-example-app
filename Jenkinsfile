@@ -36,8 +36,8 @@ spec:
             }
         }
         stage('SonarQube Analysis') {
+            def scannerHome = tool 'SonarScanner';
             steps('build 2'){
-                def scannerHome = tool 'SonarScanner';
                 withSonarQubeEnv(sonarqube) {
                     sh "sbt test"
                 }
