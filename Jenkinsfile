@@ -33,7 +33,7 @@ spec:
         stage('java install'){
             steps('build'){
                 //sh "sudo apt update -y && sudo apt install -y default-jdk"
-                
+                sh "echo hello"
             }
         }
         stage('SonarQube Analysis') {
