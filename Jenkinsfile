@@ -32,7 +32,7 @@ spec:
     stages {
         stage('java install'){
             steps('build'){
-                //sh "sudo apt update -y && sudo apt install -y default-jdk"
+                sh "apt-get update -y && apt-get install -y default-jdk sbt"
                 sh "echo hello"
             }
         }
