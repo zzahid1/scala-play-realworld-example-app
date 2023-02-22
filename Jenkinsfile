@@ -16,7 +16,7 @@ kind: Pod
 spec:
   containers:
   - name: shell
-    image: sbtscala/scala-sbt:eclipse-temurin-jammy-8u352-b08_1.8.2_3.2.2
+    image: sbtscala/scala-sbt:eclipse-temurin-focal-11.0.17_8_1.8.2_2.13.10
     command:
     - sleep
     args:
