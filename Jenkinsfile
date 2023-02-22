@@ -26,7 +26,7 @@ spec:
             // container('shell') {
             //     sh 'hostname'
             // }
-         //   defaultContainer 'shell'
+            defaultContainer 'shell'
         }
     }
     stages {
