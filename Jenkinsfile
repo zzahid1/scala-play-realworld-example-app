@@ -10,7 +10,7 @@ pipeline {
             //     command 'sleep'
             //     args 'infinity'
             // }
-/*             yaml '''
+          yaml '''
 apiVersion: v1
 kind: Pod
 spec:
@@ -21,7 +21,7 @@ spec:
     - sleep
     args:
     - infinity
-''' */
+''' 
             // Can also wrap individual steps:
             // container('shell') {
             //     sh 'hostname'
