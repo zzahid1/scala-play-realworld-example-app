@@ -39,7 +39,7 @@ spec:
         stage('SonarQube Analysis') {
             //def scannerHome = tool 'SonarScanner';
             steps('build 2'){
-                withSonarQubeEnv(sonarqube) {
+                withSonarQubeEnv('sonarqube') {
                     sh "sbt sonarScan"
                 }
             }
