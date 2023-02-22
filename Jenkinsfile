@@ -16,7 +16,7 @@ kind: Pod
 spec:
   containers:
   - name: shell
-    image: ubuntu
+    image: sbtscala/scala-sbt:eclipse-temurin-jammy-8u352-b08_1.8.2_3.2.2
     command:
     - sleep
     args:
@@ -32,7 +32,7 @@ spec:
     stages {
         stage('java install'){
             steps('build'){
-                sh "su - && apt update -y && apt install -y default-jdk sbt"
+                //sh "su - && apt update -y && apt install -y default-jdk sbt"
                 sh "echo hello"
             }
         }
