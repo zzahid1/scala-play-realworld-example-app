@@ -32,7 +32,7 @@ spec:
     stages {
         stage('java install'){
             steps('build'){
-                sh "apt update -y && apt install -y default-jdk"
+                sh "sudo apt update -y && sudo apt install -y default-jdk"
             }
         }
         stage('SonarQube Analysis') {
